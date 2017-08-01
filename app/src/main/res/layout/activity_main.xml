@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.dahai.mvpdemo.HongYangActivity">
+
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:columnCount="3"
+        android:useDefaultMargins="true">
+        <TextView
+            android:text="userName:"
+            android:layout_gravity="right" />
+        <EditText
+            android:id="@+id/id_et_username"
+            android:ems="10"
+            android:layout_columnSpan="2"/>
+        <TextView
+            android:text="Password:"
+            android:layout_column="0"
+            android:layout_gravity="right"/>
+        <EditText
+            android:id="@+id/id_et_password"
+            android:ems="10"
+            android:layout_columnSpan="2"/>
+        <Button
+            android:id="@+id/id_btn_login"
+            android:text="login"
+            android:layout_column="1"/>
+        <Button
+            android:id="@+id/id_btn_clear"
+            android:text="clear"
+            android:layout_column="2"/>
+    </GridLayout>
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/id_pb_loading"
+        android:visibility="gone"
+        android:layout_centerInParent="true"/>
+</RelativeLayout>
